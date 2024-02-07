@@ -56,3 +56,7 @@ html {
     transform: translateY(25px);
   }
 }
+
+input::placeholder {
+  color: #000000 !important;
+}
