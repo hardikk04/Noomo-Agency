@@ -36,7 +36,7 @@ function page1Animation() {
       scroller: "body",
       trigger: ".page1",
       start: "top 0",
-      end: "top -900%",
+      end: "top -800%",
       scrub: 1,
       pin: true,
       //   markers: true,
@@ -48,69 +48,117 @@ function page1Animation() {
     top: "-100%",
   });
 
-  tl.to(".page1-part5-main-text", {
-    scale: 2,
-    top: "110%",
-  });
+  tl.to(
+    ".page1-part5-main-text",
+    {
+      scale: 2,
+      top: "110%",
+    },
+    "a1"
+  );
 
-  tl.to(".page1-part4", {
-    top: "0%",
-  });
+  tl.to(
+    ".page1-part4",
+    {
+      top: "0%",
+    },
+    "a1"
+  );
 
-  //   tl.from(".page1-part4-title>h1", {
-  //     y: 500,
-  //   });
+  tl.from(
+    ".page1-part4-title>h1",
+    {
+      y: 500,
+    },
+    "a1"
+  );
 
   tl.from(".page1-part4-text", {
     opacity: 0,
   });
 
-  tl.to(".page1-part4", {
-    scale: 2,
-    top: "200%",
-  });
+  tl.to(
+    ".page1-part4",
+    {
+      scale: 2,
+      top: "200%",
+    },
+    "a2"
+  );
 
-  tl.to(".page1-part3", {
-    top: "0%",
-  });
+  tl.to(
+    ".page1-part3",
+    {
+      top: "0%",
+    },
+    "a2"
+  );
 
-  tl.from(".page1-part3-title>h1", {
-    y: 500,
-  });
+  tl.from(
+    ".page1-part3-title>h1",
+    {
+      y: 500,
+    },
+    "a2"
+  );
 
   tl.from(".page1-part3-text", {
     opacity: 0,
   });
 
-  tl.to(".page1-part3", {
-    scale: 2,
-    top: "200%",
-  });
+  tl.to(
+    ".page1-part3",
+    {
+      scale: 2,
+      top: "200%",
+    },
+    "a3"
+  );
 
-  tl.to(".page1-part2", {
-    top: "0%",
-  });
+  tl.to(
+    ".page1-part2",
+    {
+      top: "0%",
+    },
+    "a3"
+  );
 
-  //   tl.from(".page1-part2-title>h1", {
-  //     y: 500,
-  //   });
+  tl.from(
+    ".page1-part2-title>h1",
+    {
+      y: 500,
+    },
+    "a3"
+  );
 
   tl.from(".page1-part2-text", {
     opacity: 0,
   });
 
-  tl.to(".page1-part2", {
-    scale: 2,
-    top: "200%",
-  });
+  tl.to(
+    ".page1-part2",
+    {
+      scale: 2,
+      top: "200%",
+    },
+    "a4"
+  );
 
-  tl.to(".page1-part1", {
-    top: "0%",
-  });
+  tl.to(
+    ".page1-part1",
+    {
+      top: "0%",
+    },
+    "a4"
+  );
 
-  tl.from(".page1-part1-title>h1", {
-    y: 500,
-  });
+  tl.from(
+    ".page1-part1-title>h1",
+    {
+      y: 500,
+    },
+    "a4"
+  );
 
   tl.from(".page1-part1-text", {
     opacity: 0,
