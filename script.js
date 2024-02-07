@@ -248,3 +248,62 @@ function page3Animation() {
 }
 
 page3Animation();
+
+gsap.from(".page4-circle", {
+  transform: "rotate(80deg)",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page4",
+    start: "top 0",
+    end: "top -100%",
+    pin: true,
+    scrub: 1,
+    makers: true,
+  },
+});
+
+const page5Tl = gsap.timeline({
+  repeat: -1,
+});
+
+page5Tl.from(".page5-box-img>img", {
+  opacity: 0,
+  stagger: 0.8,
+});
+
+const page5Elem = document.querySelectorAll(".page5-elem");
+page5Elem.forEach((elem, index) => {
+  elem.addEventListener("mouseenter", () => {
+    gsap.to(".page5-box-img", {
+      opacity: 1,
+    });
+    for (let i = 0; i < page5Elem.length; i++) {
+      if (index === i) {
+        gsap.to(page5Elem[index], {
+          opacity: 1,
+        });
+      } else {
+        gsap.to(page5Elem[i], {
+          opacity: 0.5,
+        });
+      }
+    }
+  });
+});
+
+const page5Box = document.querySelector(".page5-box");
+page5Box.addEventListener("mousemove", (dets) => {
+  gsap.to(".page5-box-img", {
+    left: dets.x - 100,
+    top: dets.y - 300,
+  });
+});
+
+page5Box.addEventListener("mouseleave", () => {
+  gsap.to(".page5-box-img", {
+    opacity: 0,
+  });
+  gsap.to(".page5-elem", {
+    opacity: 1,
+  });
+});

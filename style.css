@@ -36,3 +36,23 @@ html {
 /* .page3-video {
   transform: rotate(1deg);
 } */
+
+.page4-circle {
+  left: -50%;
+  top: 45%;
+  /* transform: translate(-50%, 0%); */
+}
+
+.page4-circle-elem {
+  animation: moveUpDown 4s linear infinite both;
+  box-shadow: 8px 8px 5px 0px #cecdd85b;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
